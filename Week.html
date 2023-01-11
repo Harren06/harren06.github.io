@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title id="title"></title>
+        <style>
+            .center {
+                height: 200px;
+                width: 400px;
+                position: relative;
+                margin: auto;
+                text-align: center;
+                top: 50%;
+                left: 50%;
+                margin-top: -100px;
+                margin-left: -200px;
+                display: flex;
+                justify-content: center;
+            }
+            h1 {
+                position: absolute;
+                color: whitesmoke;
+                font-size: 75px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            body, html {
+                height: 100%;
+                background-color: #1f1f1f;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="center">
+            <h1 id = "week">WEEK</h1>
+        </div>
+        <script>
+            currentDate = new Date();
+            startDate = new Date(currentDate.getFullYear(), 0, 1);
+            daysBetweenStart = Math.floor((currentDate - startDate) / (24*60*60*1000));
+            console.log(daysBetweenStart)
+
+            weeknumber = Math.ceil((daysBetweenStart + currentDate.getDay()) / 7);
+            document.getElementById("week").innerHTML = weeknumber;
+            document.getElementById("title").innerHTML = weeknumber;
+        </script>
+    </body>
+</html>
