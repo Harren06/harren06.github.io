@@ -1,94 +1,86 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title id="title"></title>
+<html><head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title id="title">Well, here is nothing yet!</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="harren06.github.io/week.html gives you very usefull things for free!">
-        <meta name="author" content="Harren06 GårdagensBröd ">
-        <meta name="copyright" content="Harren06 GårdagensBröd ">
-        <title id="title"></title>
+        <meta name="description" content="Well, here is nothing yet. To see the current week go to harren06.github.io/week.html">
+        <meta name="author" content="Harren06 GårdagensBröd">
+        <meta name="copyright" content="Harren06 GårdagensBröd">
         <style>
             h1 {
-                position: relative;
+                position: absolute;
+                color: whitesmoke;
+                font-size: 75px;
+                font-family: Arial, Helvetica, sans-serif;
             }
             body, html {
+                height: 100%;
                 background-color: #121212;
-                font-family: Arial, Helvetica, sans-serif;
-                color: whitesmoke;
+                overflow: hidden;
             }
-            .header {
-              	border-radius: 25px;
-  				background: #1D1D1D;
-                padding: 20px;
-                text-align: center;
-                drop-shadow(16px 16px 10px black)
-            }
-            .navbar {
-            	overflow: hidden;
-            	border-radius: 25px;
-                background: #1D1D1D;
-                drop-shadow(16px 16px 10px black)
-            }
-            .navbar a {
-            	float: left;
-                display: block;
-                color: #f2f2f2;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-            .navbar a:hover {
-              	background-color: #5F43B2;
-              	color: white;
+            ul {
+            display: inline-grid;
+            grid-auto-flow: row;
+            grid-gap: 48px;
+            justify-items: center;
+            margin: auto;
             }
 
-            .infoBox {
-            	border-radius: 25px;
-                background: #1D1D1D;
-                padding: 20px;
-            	width: 50%;
-                drop-shadow(16px 16px 10px black)
-                position: absolute;
-                left: 50%;
-                transform: translateX(50%);
+            @media (min-width: 50px) {
+            ul {
+                grid-auto-flow: column;
+                list-style: none;
+            }
+            }
+
+            a {
+            color: #BB86FC;
+            text-decoration: none;
+            font-size: 24px;
+            box-shadow: inset 0 -1px 0 hwb(255.135, 26%, 30%);
+            }
+
+            a:hover {
+             color: #121212;
+            text-decoration: none;
+            box-shadow: inset 0 -1.2em 0 #BB86FC;
+            }
+
+            li:last-child {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            list-style-type: none;
+            }
+
+            div {
+            display: flex;
+            height: 10vh;
+            width: 100%;
+            background-color: #121212;
+            line-height: 1.3;
+            font-family: monospace;
+            }
+            footer {
+            position: fixed;
+            bottom: 20px;
+            width: 100%;
             }
         </style>
     </head>
-     <body>
-     	<div class="header">
-        	<h1>Please send help. I need somthing to cure my brain damage</h1>
-        </div>
-        <br>
-        <div class="navbar">
-        	<a href="https://harren06.github.io/week.html">Week</a>
-            <a href="#about">test</a>
-            <a href="#about">test</a>
-        </div>
-        <br>
-        <div class="infoBox">
-        	<h2>What is this?</h2>
-            <p>In the digital realm, where code is key,
-A developer emerged, a force to be,
-With skills and knowledge, and a passion to learn,
-Harren06 creates, and code bridges to burn.
+    <body>
+        <footer>
+            <div>
+                <ul>
+                    <li><a href="#about">Donate</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Privacy</a></li>
+                    <li><a href="#about">Email</a></li>
+                    <li><a href="#about">Test</a></li>
+                    <li><a href="https://github.com/Harren06/harren06.github.io">Github</a></li>
+                    </li>
+                </ul>
 
-With projects and repos, filling up his page,
-A trail of creativity, an impressive gauge,
-Of dedication and hard work, and a mind that is sharp,
-Harren06's coding journey, is a work of art.
-
-But it's not just about the code, the lines and the scripts,
-It's about the problem-solving, and the code that he flips,
-To make something new, something better, something great,
-Harren06's creations, are truly first-rate.
-
-So let us raise a glass, to a coder so true,
-A developer like Harren06, is not just rare, but few,
-May he continue to create, and to innovate,
-In the world of coding, Harren06, is truly first-rate.</p>
-        </div>
-          <p style='color:White'>Kill me</p>
-          <a href="https://harren06.github.io/week.html">View current week </a>
-  </body>
+            </div>
+        </footer> 
+    </body>
 </html>
