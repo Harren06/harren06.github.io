@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title id="title"></title>
+<html><head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title id="title">Current week: 2</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="harren06.github.io/week.html gives you the current week number compleatly for free">
@@ -45,21 +45,78 @@
                 background-color: #121212;
                 overflow: hidden;
             }
+            ul {
+            display: inline-grid;
+            grid-auto-flow: row;
+            grid-gap: 24px;
+            justify-items: center;
+            margin: auto;
+            }
+
+            @media (min-width: 500px) {
+            ul {
+                grid-auto-flow: column;
+            }
+            }
+
+            a {
+            color: #5F43B2;
+            text-decoration: none;
+            font-size: 24px;
+            box-shadow: inset 0 -1px 0 hwb(255.135, 26%, 30%);
+            }
+
+            a:hover {
+            box-shadow: inset 0 -1.2em 0 #03DAC5;
+            }
+
+            li:last-child {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            }
+
+        
+
+            /* below is just for demo styling */
+
+            div {
+            display: flex;
+            height: 120vh;
+            width: 100%;
+            background-color: #121212;
+            line-height: 1.3;
+            font-family: monospace;
+            }
+
+
         </style>
     </head>
     <body>
     	<h1 class="centerTopText">Current week:</h1><br>
         <div class="center">
-            <h1 id = "week">WEEK</h1>
+            <h1 id="week">2</h1>
         </div>
         <script>
             currentDate = new Date();
             startDate = new Date(currentDate.getFullYear(), 0, 1);
             daysBetweenStart = Math.floor((currentDate - startDate) / (24*60*60*1000));
+            console.log(daysBetweenStart)
 
             weeknumber = Math.ceil((daysBetweenStart + currentDate.getDay()) / 7);
             document.getElementById("week").innerHTML = weeknumber;
             document.getElementById("title").innerHTML = "Current week: " + weeknumber;
         </script>
+         <footer>
+        <div>
+            <ul>
+                <li><a href="#about">Twitter</a></li>
+                <li><a href="#about">Codepen</a></li>
+                <li><a href="m#about">Email</a></li>
+                <li><a href="#about">Dribbble</a></li>
+                <li><a href="https://github.com/Harren06/harren06.github.io">Github</a></li>
+                </li>
+        </div>
+        </footer> 
+   
     </body>
 </html>
