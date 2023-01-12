@@ -8,23 +8,17 @@
         <meta name="author" content="Harren06 GårdagensBröd">
         <meta name="copyright" content="Harren06 GårdagensBröd">
         <style>
-            h1 {
-                position: absolute;
-                color: whitesmoke;
-                font-size: 75px;
-                font-family: Arial, Helvetica, sans-serif;
-            }
             body, html {
                 height: 100%;
                 background-color: #121212;
                 overflow: hidden;
             }
             ul {
-            display: inline-grid;
-            grid-auto-flow: row;
-            grid-gap: 48px;
-            justify-items: center;
-            margin: auto;
+              display: inline-grid;
+              grid-auto-flow: row;
+              grid-gap: 48px;
+              justify-items: center;
+              margin: auto;
             }
 
             @media (min-width: 50px) {
@@ -35,83 +29,96 @@
             }
 
             a {
-            color: #BB86FC;
-            text-decoration: none;
-            font-size: 24px;
-            box-shadow: inset 0 -1px 0 hwb(255.135, 26%, 30%);
+              color: #BB86FC;
+              text-decoration: none;
+              font-size: 24px;
+              box-shadow: inset 0 -1px 0 hwb(255.135, 26%, 30%);
             }
 
             a:hover {
-             color: #121212;
-            text-decoration: none;
-            box-shadow: inset 0 -1.2em 0 #BB86FC;
+              color: #121212;
+              text-decoration: none;
+              box-shadow: inset 0 -1.2em 0 #BB86FC;
             }
 
             li:last-child {
-            grid-column: 1 / 2;
-            grid-row: 1 / 2;
-            list-style-type: none;
+              grid-column: 1 / 2;
+              grid-row: 1 / 2;
+              list-style-type: none;
             }
 
             div {
-            display: flex;
-            height: 10vh;
-            width: 100%;
-            background-color: #121212;
-            line-height: 1.3;
-            font-family: monospace;
+              display: flex;
+              height: 10vh;
+              width: 100%;
+              background-color: #121212;
+              line-height: 1.3;
+              font-family: monospace;
             }
+            
             footer {
-            position: fixed;
-            bottom: 20px;
-            width: 100%;
+              position: fixed;
+              bottom: 20px;
+              width: 100%;
             }
             
             :root{
-            --typewriterSpeed: 6s;
-            --text-color: hsl(0, 0%, 0%);
+              --bg-color: #121212;
+              --typewriterSpeed: 6s;
+              --text-color: Whitesmoke;
             }
+
             .Introduction{
-            margin: 0;
-            font-family: "Cutive", sans-serif;
-            min-height: 100vh;
-            display: grid;
-            place-content: center;
-            text-align: left;
+              margin: 0;
+              font-family: "Cutive", sans-serif;
+              min-height: 100vh;
+              display: flex;
+              place-content: center;
+              text-align: left;
+              background: var(--bg-color);
             }
+
+            h1 {
+              font-size: clamp(1rem, 3vw + 1rem, 4rem);
+              position: relative;
+              font-family: "Cutive", monospace;
+              color: var(--text-color);
+              padding-left: 2%;
+            }
+
             h1::before,
             h1::after{
-            content: '';
-            position: absolute;
-            top: 0;
-            right:  0;
-            bottom: 0;
-            left: 0;
+                content: '';
+                position: absolute;
+                top: 0;
+                right:  0;
+                bottom: 0;
+                left: 0;
             }
 
             h1::before{
-            background: var(--bg-color);
-            animation: typewriter var(--typewriterSpeed) steps(18) 1s forwards;
+                background: var(--bg-color);
+                animation: typewriter var(--typewriterSpeed) steps(21) 1s forwards;
             }
 
             h1::after{
-            width: var(--cursor-width);
-            background: var(--cursor-color);
-            animation: 
-                typewriter var(--typewriterSpeed) steps(18) 1s forwards;
+                animation: 
+                    typewriter var(--typewriterSpeed) steps(21) 1s forwards,
+                    /*blink 1000ms steps(19) infinite;*/
             }
+
             @keyframes typewriter {
-                    to { 
-                        left: 100%; 
-                    }
+                to { 
+                    left: 100%; 
+                }
             }
         </style>
     </head>
     <body>
-            <img src="https://harren06.github.io/egg.gif" 
-                height="200px"
-                 width="200px"/>
             <div class="Introduction">
+              <img src="https://harren06.github.io/egg.gif" 
+              height="200px"
+              width="200px"/>
                 <h1>I've brain damage...</h1>
             </div>
         <footer>
