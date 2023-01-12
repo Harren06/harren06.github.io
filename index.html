@@ -66,12 +66,54 @@
             bottom: 20px;
             width: 100%;
             }
+            
+            :root{
+            --typewriterSpeed: 6s;
+            --text-color: hsl(0, 0%, 0%);
+            }
+            .Introduction{
+            margin: 0;
+            font-family: "Cutive", sans-serif;
+            min-height: 100vh;
+            display: grid;
+            place-content: center;
+            text-align: left;
+            }
+            h1::before,
+            h1::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            right:  0;
+            bottom: 0;
+            left: 0;
+            }
+
+            h1::before{
+            background: var(--bg-color);
+            animation: typewriter var(--typewriterSpeed) steps(18) 1s forwards;
+            }
+
+            h1::after{
+            width: var(--cursor-width);
+            background: var(--cursor-color);
+            animation: 
+                typewriter var(--typewriterSpeed) steps(18) 1s forwards;
+            }
+            @keyframes typewriter {
+                    to { 
+                        left: 100%; 
+                    }
+            }
         </style>
     </head>
     <body>
             <img src="https://harren06.github.io/egg.gif" 
                 height="200px"
                  width="200px"/>
+            <div class="Introduction">
+                <h1>I've brain damage...</h1>
+            </div>
         <footer>
             <div>
                 <ul>
