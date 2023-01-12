@@ -106,9 +106,8 @@
             currentDate = new Date();
             startDate = new Date(currentDate.getFullYear(), 0, 1);
             daysBetweenStart = Math.floor((currentDate - startDate) / (24*60*60*1000));
-            console.log(daysBetweenStart)
 
-            weeknumber = Math.ceil((daysBetweenStart + currentDate.getDay()) / 7);
+            weeknumber = Math.ceil((daysBetweenStart / 7));
             document.getElementById("week").innerHTML = weeknumber;
             document.getElementById("title").innerHTML = "Current week: " + weeknumber;
         </script>
