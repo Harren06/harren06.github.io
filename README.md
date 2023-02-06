@@ -4,7 +4,7 @@ Imagine writing a description :skull: :skull:
 
 ## Projects
 - [Week](https://harren06.github.io/week.html) Tells you the current week without any google trackers!
-- [Cumming soon](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+- [Cumming soon ;)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
 ## Authors
 
