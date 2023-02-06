@@ -1,6 +1,6 @@
 # https://harren06.github.io/
 
-Imagine writing a description :skull: :skull:
+Imagine writing a description :skull::skull::skull:
 
 ## Projects
 - [Week](https://harren06.github.io/week.html) Tells you the current week without any google trackers!
