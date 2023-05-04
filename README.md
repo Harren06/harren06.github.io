@@ -12,8 +12,9 @@ Imagine writing a description :skull::skull::skull:
 - [@GårdagensBröd](https://github.com/GardagensBrod)
 
 ## Donate
-Donate to support our current and future projects!
-- Bitcoin: bc1qesn6yragltvvztjjuw05alhyd88l2mev288gvg 
+Donate to support my current and future projects!
+- Bitcoin `bc1qesn6yragltvvztjjuw05alhyd88l2mev288gvg` 
+- Monero `48tAQeqAjuUhk68mY18oK4DZ9rBzPk6WJWFwcTKE42obJSjP9rj6oqmaFZLoWrrT6X37VNxRB8Kd9WR386FTnkpcC1SBX6X`
 
 ## Used By
 
